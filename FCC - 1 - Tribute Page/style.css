@@ -1,0 +1,116 @@
+body {
+    font-family: 'Hammersmith One', sans-serif;
+    background-image: url("img/barratts-football-art-powerpoint.jpeg");
+}
+
+#header,
+#title {
+    text-align: center;
+    padding: 20px;
+}
+
+#header {
+    margin-bottom: 20px;
+}
+
+#img-div {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 20px;
+}
+
+#image2 {
+    max-width: 100%;
+    display: block;
+    height: 312px;
+    grid-column: 1 / 2;
+}
+
+#image {
+    max-width: 100%;
+    display: block;
+    height: 312px;
+    grid-column: 2 / 3;
+}
+
+#image3 {
+    max-width: 100%;
+    display: block;
+    height: 312px;
+    grid-column: 3 / 4;
+}
+
+#img2-caption {
+    grid-column: 1 / 2;
+    text-align: center;
+}
+
+#img-caption {
+    grid-column: 2 / 3;
+    text-align: center;
+}
+
+#img3-caption {
+    grid-column: 3 / 4;
+    text-align: center;
+}
+
+#tribute-info {
+    background-color: #ffff00;
+    font-size: 26px;
+    text-align: center;
+    padding-top: 40px;
+    opacity: 0.6;
+}
+
+#grid-container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-areas:
+        "left right";
+    grid-column-gap: 0px;
+}
+
+#grid-left {
+    grid-area: left;
+}
+
+#grid-right {
+    grid-area: right;
+}
+
+#table-left {
+    grid-area: left;
+    width: 100%;
+    text-align: center;
+    padding-top: 80px;
+    font-size: 18px;
+}
+
+#list-right {
+    grid-area: right;
+    width: 35%;
+    text-align: left;
+    padding-top: 70px;
+    font-size: 18px;
+    margin-left: 35%;
+}
+
+#footer {
+    font-size: 18px;
+    padding-bottom: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+    #main {
+        display: flexbox;
+    }
+
+    #img-div {
+        display: flexbox;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+}
