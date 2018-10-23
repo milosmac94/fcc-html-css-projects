@@ -1,0 +1,234 @@
+/* --------------------------------------------- */
+/* BASIC SETUP */
+/* --------------------------------------------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #f0f0f0;
+    color: #6a6a6a;
+    font-family: "Raleway", "Arial", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+    z-index: 2;
+}
+
+h1,
+h2,
+h3,
+p,
+ul {
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+h1,
+h2 {
+    margin-left: 20px;
+}
+
+h3 {
+    font-size: 100%;
+}
+
+code {
+    display: inline-block;
+    text-align: left;
+    white-space: pre;
+    position: relative;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 1;
+    background-color: #f7f7f7;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+/* --------------------------------------------- */
+/* HEADER */
+/* --------------------------------------------- */
+
+#main-header {
+    background-color: #2f2f2f;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+#main-header img {
+    display: inline;
+    height: 65px;
+    width: 100px;
+    margin-left: 30px;
+}
+
+.nav-menu {
+    float: right;
+    padding-top: 5px;
+    margin-top: 20px;
+}
+
+.nav-menu ul {
+    list-style: none;
+    padding: 0;
+    width: 75%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 70%;
+    display: inline;
+}
+
+.nav-menu li {
+    display: inline;
+    list-style: none;
+    padding-right: 20px;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+li:before {
+    content: '|';
+    padding: 0 1.5em 0 .1em;
+    color: #999;
+}
+
+/* --------------------------------------------- */
+/* MAIN */
+/* --------------------------------------------- */
+
+#main-doc {
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* --------------------------------------------- */
+/* NAV-BAR */
+/* --------------------------------------------- */
+
+#navbar {
+    width: 30%;
+    margin-left: 40px;
+    position: fixed;
+}
+
+#navbar header h2 {
+    margin-top: 60px;
+    font-size: 120%;
+    margin-left: 0;
+}
+
+.links-box {
+    float: left;
+}
+
+.links-box a {
+    text-decoration: none;
+    display: block;
+    padding: 5px;
+}
+
+/* --------------------------------------------- */
+/* SECTIONS */
+/* --------------------------------------------- */
+
+.main-left-box {
+    width: 60%;
+    float: right;
+    text-align: left;
+    margin-top: 30px;
+}
+
+.main-section {
+    padding-right: 50px;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.main-section ul {
+    padding-left: 40px;
+}
+
+.links-box {
+    height: 150px;
+    overflow: scroll;
+}
+
+/* --------------------------------------------- */
+/* MEDIA QUERIES */
+/* --------------------------------------------- */
+
+@media only screen and (max-width: 1078px) and (min-width: 758px) {
+    .nav-menu {
+        display: flex;
+        margin-left: 10%;
+        margin-right: 10%;
+        width: 100%;
+        margin: 0 auto;
+        padding-top: 10px
+    }
+
+    #main-header {
+        padding-bottom: 60px;
+    }
+
+    #main-header img {
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (max-width: 758px) {
+    .nav-menu {
+        display: flex;
+        margin-left: 10%;
+        margin-right: 10%;
+        width: 100%;
+        margin: 0 auto;
+        padding-top: 10px
+    }
+
+    #main-header {
+        padding-bottom: 60px;
+    }
+
+    #main-header img {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    #navbar {
+        width: 100%;
+        font-size: 80%;
+        margin-left: 15%;
+    }
+
+    .main-left-box {
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .main-section {
+        padding: 0 20px;
+        font-size: 80%;
+    }
+
+    .links-box,
+    header h2 {
+        display: none;
+    }
+
+    code {
+        font-size: 60%;
+    }
