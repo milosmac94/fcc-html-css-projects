@@ -1,0 +1,119 @@
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Survey Page</title>
+</head>
+
+<body>
+    <h1 id="title">Survey about Ronaldinho</h1>
+    <div class="body">
+        <p id="description">
+            A quick survey/quiz to get some stats about the demography of R10 fans
+        </p>
+        <p id="description">Please provide your basic data for statistical purposes:</p>
+        <form id="survey-form" method="GET" action="">
+            <div class="row">
+                <label id="name-label" for="name">Name: </label>
+                <input autofocus type="text" name="name" id="name" class="input-field" placeholder="Enter your name" required>
+            </div>
+            <div class="row">
+                <label id="number-label" for="age">Age: &nbsp&nbsp&nbsp </label>
+                <input type="number" name="age" id="number" min="1" max="125" class="input-field" placeholder="Enter your age" required>
+            </div>
+            <div class="row">
+                <label id="email-label" for="email">Email: </label>
+                <input autofocus type="email" name="email" id="email" class="input-field" placeholder="Enter your email" required>
+            </div>
+            <div class="row" id="content">
+                <label id="R10" for="experience">How long are you a football fan?</label>
+                <select id="dropdown" name="experience" class="dropdown">
+                    <option value="10+">10+ years
+                    </option>
+                    <option value="5+">5-10 years
+                    </option>
+                    <option value="0-5">0-5 years
+                    </option>
+                </select>
+            </div>
+            <div class="row" id="cont">
+                <label for="continent">What continent are you located at?</label>
+                <ul style="list-style: none;">
+                    <li class="radio">
+                        <label>
+                            Europe
+                            <input name="radio-buttons" value="1" type="radio" class="continents">
+                        </label>
+                    </li>
+                    <li class="radio">
+                        <label>
+                            N. America
+                            <input name="radio-buttons" value="2" type="radio" class="continents">
+                        </label>
+                    </li>
+                    <li class="radio">
+                        <label>
+                            S. America
+                            <input name="radio-buttons" value="3" type="radio" class="continents">
+                        </label>
+                    </li>
+                    <li class="radio">
+                        <label>
+                            Australia
+                            <input name="radio-buttons" value="4" type="radio" class="continents">
+                        </label>
+                    </li>
+                    <li class="radio">
+                        <label>
+                            Asia
+                            <input name="radio-buttons" value="5" type="radio" class="continents">
+                        </label>
+                    </li>
+                    <li class="radio">
+                        <label>
+                            Africa
+                            <input name="radio-buttons" value="6" type="radio" class="continents">
+                        </label>
+                    </li>
+                </ul>
+            </div>
+            <div class="row" id="mom">
+                <label for="moments">What are your favorite Ronaldinho moments?</label>
+                <ul id="moments" style="list-style: none;">
+                    <li class="checkbox">
+                        <label>
+                            <input name="moment" value="1" type="checkbox" class="moments">Long range free-kick goal vs England (2002.)</label>
+                    </li>
+                    <li class="checkbox">
+                        <label>
+                            <input name="moment" value="2" type="checkbox" class="moments">Thunderous debut goal for Barcelona vs Sevilla (2003.)</label>
+                    </li>
+                    <li class="checkbox">
+                        <label>
+                            <input name="moment" value="3" type="checkbox" class="moments">The "crossbar" Nike commercial (2005.)</label>
+                    </li>
+                    <li class="checkbox">
+                        <label>
+                            <input name="moment" value="4" type="checkbox" class="moments">"Dancing in place" goal vs Chelsea (2005.)</label>
+                    </li>
+                    <li class="checkbox">
+                        <label>
+                            <input name="moment" value="5" type="checkbox" class="moments">Two goals in El Clásico and a standing ovation from Real Madrid fans (2005.)</label>
+                    </li>
+                </ul>
+            </div>
+            <div class="row">
+                <label for="comments">Some other moment?</label>
+                <textarea id="comments" class="input-field" style="height:100px; width: 50%;resize:vertical;" name="comment" placeholder="Enter some other memorable moment..."></textarea>
+            </div>
+        </form>
+    </div>
+    <button id="submit" type="submit">Submit</button>
+</body>
+
+</html>
